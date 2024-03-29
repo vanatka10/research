@@ -1,4 +1,5 @@
 Dạo gần đây bực mình ko chịu được search trên google mà toàn ra link chuyển hướng tới web cá độ, bực mình quá nên mình đi research luôn garrrkkkk.
+
 1. Recon
    -Sau một hồi quan sát thì có 1 số điểm chung trong các trang web sau:
    + Đều là web server window IIS của window phiên bản <=10 và những trang web check được ngôn ngữ thì đều được viết bằng ASP.NET 4.0.30319
@@ -32,6 +33,7 @@ Dạo gần đây bực mình ko chịu được search trên google mà toàn r
   - dạo 1 vòng CVE của ASP.net và IIS thì mình thấy khá nhiều CVE khá liên quan như XSS, HTTP Response Smuggling và có mấy crit vuln nữa như rce. Đa số đều là CVE từ năm 2015 trở lên đúng là version cũ có khác nhiều vuln vl
   - Mình thấy đây là chèn thẳng script vô 404 và có cả check referer để ẩn script nữa chứ không giống store xss lắm, có khi hacker remote được server rồi cũng nên, chắc dùng tool tạo redirect tới web cá độ có tiền hơn,rce làm căng còn có khi bị điều tra ra :)).
   4. Tóm lại
+    
     Cập nhật version điiiiiiiiii
   
 
