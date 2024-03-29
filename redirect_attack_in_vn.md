@@ -1,4 +1,4 @@
-Dạo gần đây bực mình ko chịu được search trên google từ google mà toàn ra link chuyển hướng tới web cá độ, bực mình quá nên mình đi research luôn garrrkkkk.
+Dạo gần đây bực mình ko chịu được search trên google mà toàn ra link chuyển hướng tới web cá độ, bực mình quá nên mình đi research luôn garrrkkkk.
 1. Recon
    -Sau một hồi quan sát thì có 1 số điểm chung trong các trang web sau:
    + Đều là web server window IIS của window phiên bản <=10 và những trang web check được ngôn ngữ thì đều được viết bằng ASP.NET 4.0.30319
@@ -9,11 +9,11 @@ Dạo gần đây bực mình ko chịu được search trên google từ google
 2. check
 - Dùng F12 xem trang web script gì ko mà sao nó chuyển hướng được hay vậy.
 - nothing.. không có gì cả, lạ nhỉ?
-- Dựa theo 1 số trang web 
+-  1 số trang web cũng thế này, mặc dù ko biết có liên quan hay ko nhưng hiển thị exception là hỏng r  
 ![image](https://github.com/vanatka10/research/assets/126310360/9102bc13-1483-4a24-a113-a29a9573ea3f)
 - 1 trang web thường khi được truy cập, 1 đường rất thẳng đúng ko
  ![image](https://github.com/vanatka10/research/assets/126310360/87e93bdd-29b8-485a-911a-289476b6be93)
-- Nhưng trang web bị nhiễm thì ko như vậy nó đổi hướng khá nhanh nên mình dùng burpsuite để bắt request luôn.
+- Nhưng trang web bị nhiễm thì ko như vậy, nó đổi hướng khá nhanh nên mình dùng burpsuite để bắt request luôn.
 ![image](https://github.com/vanatka10/research/assets/126310360/808fe6a6-5721-4892-a68e-5f63d8895a1a)
 - Nhìn request phía trên cho dù bị obfuscator cũng đoán ra là nó là đoạn javascript chuyển hướng tới web cá độ
 3. Phân tích
