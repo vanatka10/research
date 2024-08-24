@@ -37,9 +37,19 @@ Dạo gần đây bực mình ko chịu được search trên google mà toàn r
     Cập nhật version điiiiiiiiii
   
 
+Lâu lâu vòng lại thì thấy có bài viết của vnpt nói khá rõ về vấn đề này:
+https://sec.vnpt.vn/2024/05/part-1-hacker-thuc-hien-black-hat-seo-cac-trang-web-bat-hop-phap-bang-tan-cong-redirect-nhu-the-nao/
+
+-Tên của kỹ thuật này được gọi là:Black Hat SEO
+
+-Tóm tắt nguyên nhân theo bài viết là do hacker đã chèn mã độc vào file cấu hình của webserver cụ thể là ```C:\inetpub\temp\appPools\<site>``` ở trên IIS trong đó bài viết đã nêu 3 cách hacker thường sử dụng để chuyển hướng:
++Chuyển hướng URL bằng cách xử lý các mã lỗi
++Chuyển hướng URL bằng cách chèn các cấu hình độc hại thực hiện redirect trực tiếp
++Chuyển hướng URL bằng cách chèn các module độc hại (.dll trên Windows, .so trên Linux)
+
+1 cách được đề cập bên trên là chuyển hướng xử lý thông báo lỗi 404 được hacker thêm vào tệp .htaccess được mô tả ở hình dưới.
+![image](https://github.com/user-attachments/assets/71618ed3-695f-44cf-a90a-aa998e2c2c73)
 
 
-
-
-
+Còn theo mình research trước đó thì hacker thường sẽ cấu hình chèn thêm những câu lệnh javascript vào phần xử lý lỗi 404 chuyển hướng tới trang web cần seo, theo mình nghĩ tất cả các web server bị như vậy đều sẽ có cùng 1 lỗ hổng chung nên hacker mới có thể tạo script để dùng cho nhiều webserver như vậy. Thường những trang web gov rất ít khi được cập nhật hoặc được theo dõi thường xuyên và chúng thường được cấu hình gần giống nhau (chắc theo quy định ;v) nên rất dễ làm mục tiêu tấn công
 
